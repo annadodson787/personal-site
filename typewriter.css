@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url(https://allfont.net/allfont.css?fonts=honey-script-light);
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.typewriter-long {
+  background-color: #000000;
+  opacity: .8;
+  width:100%;
+  border-right: solid 3px rgba(10,10,10,.75);
+  white-space: nowrap;
+  overflow: hidden; 
+  font-size:1.45vw;
+  font-family: 'Source Code Pro', monospace;  
+}
+
+.typewriter {
+  background-color: #000000;
+  opacity: .8;
+  width:100%;
+  border-right: solid 3px rgba(10,10,10,.75);
+  white-space: nowrap;
+  overflow: hidden; 
+  font-size:.5em;
+  font-family: 'Source Code Pro', monospace;  
+}
+
+.typewriter2 {
+  background-color: #000000;
+  opacity: .8;
+  width:100%;
+  border-right: solid 3px rgba(10,10,10,.75);
+  white-space: nowrap;
+  overflow: hidden; 
+  font-size:.5em;
+  margin-top: -20px;
+  margin:0;
+  padding-left:0;
+  font-family: 'Source Code Pro', monospace;  
+}
+
+/* Animation */
+.typewriter-long {
+  animation: animated-text 2s steps(40,end) 1s 1 normal both,
+             animated-cursor 500ms steps(40,end) infinite;
+}
+
+.typewriter {
+  animation: animated-text 1.5s steps(40,end) 1s 1 normal both,
+             animated-cursor 500ms steps(40,end) infinite;
+}
+
+.typewriter2 {
+  position: relative;
+  animation: animated-text 1.5s steps(40,end) 1s 1 normal both,
+             animated-cursor 500ms steps(40,end) infinite;
+  animation-delay: 2s;
+}
+
+.text-center {
+	position: relative;
+    top: 50%;  
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+}
+
+.row [class*='col-'] {
+
+}
+
+.row [class*='col-'] {
+	white-space: wrap;
+	font-size:1em;
+    transition: all 0.5s ease-in-out;
+}
+
+.row [class*='col-sm'] {
+	white-space: nowrap;
+	font-size:1.25em;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width:100%;}
+}
+
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(10,10,10,.75);}
+  to{border-right-color: transparent;}
+}
